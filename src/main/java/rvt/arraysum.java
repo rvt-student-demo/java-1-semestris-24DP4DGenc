@@ -65,4 +65,3 @@ public class arraysum {
                                 + val[3] + " " + val[2] + " " + val[1] + " " + val[0] );
                                 }
 }
-
