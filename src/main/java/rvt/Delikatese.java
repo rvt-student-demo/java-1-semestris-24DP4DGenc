@@ -31,7 +31,6 @@ public class Delikatese {
 
             System.out.println("Kopa " + kopa);
 
-            scanner.close();
-            
+            scanner.close();   
     }
 }
