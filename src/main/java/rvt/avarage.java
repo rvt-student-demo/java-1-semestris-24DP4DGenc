@@ -15,6 +15,8 @@ public class avarage {
         double average = (first + second) / 2.0;
 
         System.out.println("The average is " + average);
+
+        scanner.close();
     }
 }
 
