@@ -12,5 +12,6 @@ public class carry_on {
                 break;
             }
         }
+        reader.close();
     }
 }
