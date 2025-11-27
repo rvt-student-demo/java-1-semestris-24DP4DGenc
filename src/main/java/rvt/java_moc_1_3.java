@@ -11,5 +11,7 @@ public class java_moc_1_3 {
         System.out.println("Hi");
         System.out.println("Hi");
         System.out.println("Hi");
+
+        scanner.close();
     }
 }
