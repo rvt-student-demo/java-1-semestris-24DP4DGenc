@@ -12,5 +12,6 @@ public class there_yet {
                 break;
             }
         }
+        scanner.close();
     }
 }
