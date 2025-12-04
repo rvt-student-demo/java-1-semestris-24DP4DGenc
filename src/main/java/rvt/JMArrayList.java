@@ -1,26 +1,77 @@
 package rvt;
 
-import java.util.*; // importējam vairākas klases
+import java.util.Scanner;
+import java.util.ArrayList;    
 
-// Katrs uzdevums ir ievietots attiecīgā metodē
 public class JMArrayList {
     public static void main(String[] args) {
+        Only_These_Numbers();
+        List_size();
+        On_The_list();
+        Remove_Last();
+    }
+        public static void Only_These_Numbers() {
+            Scanner scanner = new Scanner(System.in);
+            ArrayList<Integer> num_list = new ArrayList<Integer>();
+
+            while (true) {
+                int number = Integer.valueOf(scanner.nextInt());
+                if (number == -1) {
+                    break;
+                }    
+                num_list.add(number);
+            }
+
+            System.out.println("From where?");
+            int first = Integer.valueOf(scanner.nextInt());
+
+            System.out.println("To where?");
+            int last = Integer.valueOf(scanner.nextInt());
+
+            for (int i = first; i <= last; i++) {
+                System.out.println(num_list.get(i));
+            }
+        }
+        public static void List_size() {
+             Scanner scanner = new Scanner(System.in);
+             ArrayList<String> string_list = new ArrayList<String>();
+
+            while (true) {
+                String name = String.valueOf(scanner.nextLine());
+                if (name.isEmpty()) {
+                    break;
+                }    
+                string_list.add(name);
+        
+                
+            }
+        System.out.println(string_list.size());
 
     }
+        public static void On_The_list() {
+            Scanner scanner = new Scanner(System.in);
+            ArrayList<String> string_list_2 = new ArrayList<String>();
 
-    public static void onlyTheseNumbers() {
+            while (true) {
+                String input = String.valueOf(scanner.nextLine());
+                if (input.isEmpty()) {
+                    break;
+                }    
+                string_list_2.add(input);
+        
+                
+            }
+            System.out.print("\nSearch for? ");
+            String search = scanner.nextLine();
+
+            if (string_list_2.contains(search)) {
+            System.out.println(search + " was found!");
+            } 
+            else {
+            System.out.println(search + " was not found!");
+            }
+        }
+        public static void Remove_Last() {
+            
+        }
     }
-
-    public static void listSize() {
-        Scanner scanner = new Scanner(System.in);
-        ArrayList<String> list = new ArrayList<>();
-        System.out.println("Ievada vārdu");
-    }
-
-    public static void onThelist() {
-    }
-
-    public static void removelast(ArrayList<String> strings) {
-    }
-
-}
