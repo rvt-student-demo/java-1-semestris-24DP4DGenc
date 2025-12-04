@@ -56,7 +56,6 @@ public class java_moc_4_2 {
                     System.out.println(book.getTitle());
                 }
             }
-
             scanner.close();
         }
     }
